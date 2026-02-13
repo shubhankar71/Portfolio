@@ -1,0 +1,119 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: #181a1b;
+  color: #f5f6fa;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #232526, #414345);
+  color: #ffe082;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero .highlight {
+  color: #ffaf36;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  border: none;
+  background: #ffe082;
+  color: #222327;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #ffaf36;
+}
+
+/* Nav */
+.navbar {
+  background: #282a2d;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.navbar a {
+  color: #ffe082;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.section {
+  background: #202225;
+  border-radius: 12px;
+  margin: 40px auto 24px;
+  padding: 60px 20px;
+  max-width: 900px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* Projects */
+.project-card {
+  background: #222327;
+  color: #f5f6fa;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.project-icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #ffaf36;
+}
+
+/* Contact */
+input, textarea {
+  background: #202225;
+  color: #fff;
+  border: 2px solid #34373b;
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 8px;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #bbb;
+}
+
+/* Footer */
+footer {
+  background: #232526;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* Utility */
+.hidden {
+  display: none;
+}
