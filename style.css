@@ -81,7 +81,7 @@ body {
   border-radius: 10px;
   max-width: 500px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-  text-align: left;  /* add this */
+  text-align: left !important;
 }
 
 .project-icon {
