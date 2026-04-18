@@ -2,7 +2,7 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
   e.preventDefault();
   const name = document.getElementById('name').value;
   const message = document.getElementById('message').value;
-
+  // No contact form currently — placeholder for future use
   const response = document.getElementById('responseMessage');
   response.classList.remove('hidden');
   response.style.color = '#ffaf36';
