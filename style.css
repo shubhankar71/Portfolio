@@ -120,6 +120,60 @@ body {
   text-align: left;
 }
 
+/* Updated Project Card */
+.project-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.project-card-header .project-icon {
+  margin-bottom: 0;
+}
+
+.project-desc {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.tag {
+  background: #2e3136;
+  color: #ffaf36;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid #ffaf3640;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffe082;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #ffaf3660;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.project-link:hover {
+  background: #ffaf3620;
+  border-color: #ffaf36;
+}
+
 /* Contact */
 input, textarea {
   background: #202225;
