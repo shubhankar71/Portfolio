@@ -1,112 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Font Awesome for Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <!-- CSS File -->
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="hero">
-    <div class="hero-text">
-      <h1>👋 Hello, I'm <span class="highlight">Shubhankar</span></h1>
-      <p><strong>BTech CSE Student | Web Developer | Python Developer</strong></p>
-      <a href="#contact" class="btn">Let's Connect</a>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <nav class="navbar">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <body>
+    <header class="hero">
+      <div class="hero-text">
+        <h1>👋 Hello, I'm <span class="highlight">Shubhankar</span></h1>
+        <p>
+          <strong>
+            BTech CSE Student | AI Engineer | Python Developer | Data Scientist 
+          </strong>
+        </p>
+        <a href="#contact" class="btn">Let's Connect</a>
+      </div>
+    </header>
 
-  <section id="about" class="about section">
-    <h2>👨‍💻 About Me</h2>
-    <p>Hi! I'm Shubhankar learning to build modern, interactive web experiences. I love working with Python, HTML, CSS and different tools related to Python to create amazing projects and solve real-world problems. I aspire to become a Machine Learning Engineer and I have a strong foundation in DSA.</p>
-  </section>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-  <section id="projects" class="projects section">
-  <h2>✨ Projects</h2>
+    <section id="about" class="about section">
+      <h2>👨‍💻 About Me</h2>
+      <p>
+        Hi! I'm Shubhankar learning to build modern, interactive web experiences.
+        I love working with Python, HTML, CSS and different tools related to
+        Python to create amazing projects and solve real-world problems.
+        I aspire to become a Machine Learning Engineer and I have a strong
+        foundation in DSA.
+      </p>
+    </section>
 
-  <div class="project-card">
-  <div class="project-card-header">
-    <i class="fa-solid fa-chart-line project-icon"></i>
-    <h3>Finance Tracker Application</h3>
-  </div>
-  <p class="project-desc">A RESTful web app for managing personal finances with real-time analytics and role-based access.</p>
-  <ul class="project-points">
-    <li>Engineered a RESTful web app that streamlines personal finance management through real-time data analytics.</li>
-    <li>Designed a secure backend using Flask and SQLite, ensuring 100% data persistence for user transactions.</li>
-    <li>Built a responsive dashboard with Role-Based Access Control to maintain data privacy and user hierarchy.</li>
-  </ul>
-  <div class="project-tags">
-    <span class="tag">Python</span>
-    <span class="tag">Flask</span>
-    <span class="tag">SQLite</span>
-    <span class="tag">REST API</span>
-  </div>
-  <a href="https://github.com/shubhankar71/Finance-Tracking-Application" target="_blank" class="project-link">
-    <i class="fa-brands fa-github"></i> View on GitHub
-  </a>
-</div>
+    <section id="projects" class="projects section">
+      <h2>✨ Projects</h2>
 
-  <!-- Copy the card above to add more projects -->
-  <div class="project-card">
-  <div class="project-card-header">
-    <i class="fa-solid fa-chart-line project-icon"></i>
-    <h3>Real Time Face Detection</h3>
-  </div>
-  <p class="project-desc">A Lightweight Python application using OpenCV to detect and track faces in real-time via live webcam streams.</p>
-  <ul class="project-points">
-    <li>Developed a real-time face detection application using OpenCV and the Haar Cascade classifier.</li>
-    <li>Implemented a frame-by-frame processing loop that converts live video to grayscale for optimized feature detection.</li>
-    <li>Engineered a system to automatically label detections and maintain a real-time "Face Count" overlay via the OpenCV drawing API.</li>
-  </ul>
-  <div class="project-tags">
-    <span class="tag">Python</span>
-    <span class="tag">OpenCV</span>
-  </div>
-  <a href="https://github.com/shubhankar71/Real-Time-Face-Detection-System" target="_blank" class="project-link">
-    <i class="fa-brands fa-github"></i> View on GitHub
-  </a>
-</div>
-</section>
+      <div class="project-card">
+        <div class="project-card-header">
+          <i class="fa-solid fa-chart-line project-icon"></i>
+          <h3>Distributed Financial Analytics and RAG Service</h3>
+        </div>
+        <p class="project-desc">
+          A secure financial management API with RAG-powered spending insights,
+          real-time analytics, and interactive expense tracking.
+        </p>
+        <ul class="project-points">
+          <li>
+            Built a multi-user financial REST API using FastAPI and async SQLAlchemy
+            with JWT authentication, bcrypt hashing, and OTP email verification.
+          </li>
+          <li>
+            Optimized a RAG pipeline using OpenAI embeddings and cosine similarity,
+            delivering contextual spending insights in under 200ms across 100+ documents.
+          </li>
+          <li>
+            Implemented token-bucket rate limiting, schema validation, category APIs, 
+            Chart.js analytics, and an interactive expense dashboard.
+          </li>
+        </ul>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">SQLAlchemy</span>
+          <span class="tag">JWT</span>
+          <span class="tag">OpenAI API</span>
+        </div>
+        <a
+          href="https://github.com/shubhankar71/Expense-Tracker-and-Analyzer"
+          target="_blank"
+          class="project-link"
+        >
+          <i class="fa-brands fa-github"></i>
+          View on GitHub
+        </a>
+      </div>
 
-<section id="contact" class="contact section">
-  <h2>Contact me</h2>
+      <div class="project-card">
+        <div class="project-card-header">
+          <i class="fa-solid fa-chart-line project-icon"></i>
+          <h3>Dental Lesion Segmentation</h3>
+        </div>
+        <p class="project-desc">
+          A deep learning pipeline for automated dental lesion segmentation
+          from panoramic X-ray images using U-Net and EfficientNet-B0.
+        </p>
+        <ul class="project-points">
+          <li>
+            Built a U-Net segmentation pipeline with EfficientNet-B0 for
+            dental lesion detection on 1,193 X-ray image-mask pairs.
+          </li>
+          <li>
+            Addressed class imbalance using weighted sampling and Focal Tversky Loss,
+            achieving {85.02% validation F1} and {83.60% test F1}.
+          </li>
+        </ul>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Kaggle</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">U-Net</span>
+          <span class="tag">OpenCV</span>
+        </div>
+        <a
+          href="https://github.com/shubhankar71/Dental-Lesion-Segmentation"
+          target="_blank"
+          class="project-link"
+        >
+          <i class="fa-brands fa-github"></i>
+          View on GitHub
+        </a>
+      </div>
 
-  <p><strong>Email:</strong> mshubhankarrao@gmail.com</p>
+      <div class="project-card">
+        <div class="project-card-header">
+          <i class="fa-solid fa-chart-line project-icon"></i>
+          <h3>OCR-Optical Character Recognition</h3>
+        </div>
+        <p class="project-desc">
+          OCR-based system that automatically reads receipt images and extracts useful
+          information such as store name, date, total amount, and purchased items.
+        </p>
+        <ul class="project-points">
+          <li>
+            Built an automated Receipt OCR pipeline using OpenCV,
+            EasyOCR, and Tesseract to extract structured JSON data.
+          </li>
+          <li>
+            Implemented image preprocessing, deskewing, text grouping,
+            and regex/rule-based extraction for store names, dates, totals, and line items.
+          </li>
+          <li>
+            Processed 371 receipts, leveraging confidence scoring to flag 246 receipts 
+            for manual review.
+          </li>
+        </ul>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">OpenCV</span>
+          <span class="tag">NumPy</span>
+          <span class="tag">EasyOCR</span>
+          <span class="tag">Regex</span>
+          <span class="tag">Kaggle</span>
+        </div>
+        <a
+          href="https://github.com/shubhankar71/OCR"
+          target="_blank"
+          class="project-link"
+        >
+          <i class="fa-brands fa-github"></i>
+          View on GitHub
+        </a>
+      </div>
 
-  <p>
-    <strong>LinkedIn:</strong>
-    <a href="https://www.linkedin.com/in/musudi-shubhankar-rao-728399243/" target="_blank">
-      www.linkedin.com/in/musudi-shubhankar-rao-728399243
-    </a>
-  </p>
+      <div class="project-card">
+        <div class="project-card-header">
+          <i class="fa-solid fa-chart-line project-icon"></i>
+          <h3>Semantic Recommendation and NLP Search Engine</h3>
+        </div>
+        <p class="project-desc">
+          An AI-assisted game recommendation platform, Instead of searching through hundreds 
+          of games manually, users describe the type of game they want in natural language.
+        </p>
+        <ul class="project-points">
+          <li>
+            Developed a FastAPI backend with SQLite for query parsing,
+            personalization, and recommendation management.
+          </li>
+          <li>
+            Built and deployed a responsive web app on
+            Render with client-side caching for personalized rankings.
+          </li>
+        </ul>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">SQLite</span>
+          <span class="tag">Claude API</span>
+          <span class="tag">Cosine Similarity</span>
+        </div>
+        <a
+          href="https://github.com/shubhankar71/GAME-DISCOVERER"
+          target="_blank"
+          class="project-link"
+        >
+          <i class="fa-brands fa-github"></i>
+          View on GitHub
+        </a>
+      </div>
 
+      <div class="project-card">
+        <div class="project-card-header">
+          <i class="fa-solid fa-chart-line project-icon"></i>
+          <h3>Finance Tracker Application</h3>
+        </div>
+        <p class="project-desc">
+          A RESTful web app for managing personal finances with real-time
+          analytics and role-based access.
+        </p>
+        <ul class="project-points">
+          <li>
+            Engineered a RESTful web app that streamlines personal finance
+            management through real-time data analytics.
+          </li>
+          <li>
+            Designed a secure backend using Flask and SQLite, ensuring 100%
+            data persistence for user transactions.
+          </li>
+          <li>
+            Built a responsive dashboard with Role-Based Access Control to
+            maintain data privacy and user hierarchy.
+          </li>
+        </ul>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Flask</span>
+          <span class="tag">SQLite</span>
+          <span class="tag">REST API</span>
+        </div>
+        <a
+          href="https://github.com/shubhankar71/Finance-Tracking-Application"
+          target="_blank"
+          class="project-link"
+        >
+          <i class="fa-brands fa-github"></i>
+          View on GitHub
+        </a>
+      </div>
 
-  <p>
-    <strong>GitHub:</strong>
-    <a href="https://github.com/shubhankar71" target="_blank">
-      https://github.com/shubhankar71
-    </a>
-  </p>
-</section>
+      <!-- Copy the card above to add more projects -->
+      <div class="project-card">
+        <div class="project-card-header">
+          <i class="fa-solid fa-chart-line project-icon"></i>
+          <h3>Real Time Face Detection</h3>
+        </div>
+        <p class="project-desc">
+          A Lightweight Python application using OpenCV to detect and track
+          faces in real-time via live webcam streams.
+        </p>
+        <ul class="project-points">
+          <li>
+            Developed a real-time face detection application using OpenCV and
+            the Haar Cascade classifier.
+          </li>
+          <li>
+            Implemented a frame-by-frame processing loop that converts live
+            video to grayscale for optimized feature detection.
+          </li>
+          <li>
+            Engineered a system to automatically label detections and maintain
+            a real-time "Face Count" overlay via the OpenCV drawing API.
+          </li>
+        </ul>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">OpenCV</span>
+        </div>
+        <a
+          href="https://github.com/shubhankar71/Real-Time-Face-Detection-System"
+          target="_blank"
+          class="project-link"
+        >
+          <i class="fa-brands fa-github"></i>
+          View on GitHub
+        </a>
+      </div>
 
+      
 
-  <footer>
-    <p>© 2025 Shubhankar, All rights resevered.</p>
-  </footer>
+    </section>
 
-  <script src="script.js"></script>
-</body>
+    <section id="contact" class="contact section">
+      <h2>Contact me</h2>
+      <p>
+        <strong>Email:</strong>
+        mshubhankarrao@gmail.com
+      </p>
+      <p>
+        <strong>LinkedIn:</strong>
+        <a
+          href="https://www.linkedin.com/in/musudi-shubhankar-rao-728399243/"
+          target="_blank"
+        >
+          www.linkedin.com/in/musudi-shubhankar-rao-728399243
+        </a>
+      </p>
+
+      <p>
+        <strong>GitHub:</strong>
+        <a
+          href="https://github.com/shubhankar71"
+          target="_blank"
+        >
+          https://github.com/shubhankar71
+        </a>
+      </p>
+    </section>
+    <footer>
+      <p>© 2025 Shubhankar, All rights resevered.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
